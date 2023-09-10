@@ -1,0 +1,197 @@
+body {
+    font: 18px/1.5 "Lucida Console", "Courier New", monospace;
+    background-color: rgba(219,211,200,255);
+}
+
+.wrapper {
+   /*-- width: 90%;
+    z-index: 2;*/
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+   
+}
+
+/* =General */
+h1 {
+    /*font-size: 30px;
+    line-height: 1.2;*/
+    margin-top: 0;
+    font-weight: 300;
+}
+.aboutme p{
+    color : #000000;
+}
+#intro {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+/* =Main */
+.section-static {
+    padding: 40px 0;
+    background-color: rgb(243,239,235);
+}
+.bcg-brown {
+    background-color :#a88d75;
+ 
+}
+
+.subtitle {
+    display : block;
+    width : 50vw;
+}
+.aboutMe-image{
+    width :  50vw;
+    height : 150px;
+    float: right;
+    object-fit: cover;
+    overflow: hidden;
+    display : inline;
+}
+ i{
+    display :block;
+ }
+.parts {
+  
+    margin: 50px 0 0 0;
+   
+}
+.part {
+    padding-bottom: 60px;
+ 
+    display: flex;
+    color : white;
+}
+.part .image {
+    width: 100px;
+    margin: 0 30px;
+    background: url('../img/img_innerPen.png') no-repeat 50% 0;
+    background-size: 90px auto;
+}
+.parts h3 {
+   
+    width: calc(50% - 90px);
+    margin: 0 0 0 auto;
+    text-align: right;
+}
+
+.parts p{
+    font-size: 13px;
+    width: calc(50% - 90px);
+    margin: 0 auto 0 0;
+    text-align: left;
+    
+}
+.part1 .image {
+    background-position: 50% 0;
+    min-height: 110px;
+}
+.part2 .image {
+    background-position: 50% -232px;
+    min-height: 370px;
+}
+.part3{
+    z-index: 2;
+    position : relative;
+}
+.part5{
+    z-index :1;
+    position : relative;
+}
+
+/* this is the pen body */
+.part3 .image {
+    background: url('../img/img_outerPen.png') no-repeat 50% 0;
+    background-size: 90px auto;
+    min-height: 580px;
+
+}
+.part4 .image {
+    background-position: 50% -626px;
+    min-height: 430px;
+
+}
+.part5 .image {
+    background-position: 50% -1156px;
+    min-height: 150px;
+}
+.part6 .image {
+    background-position: 50% -1439px;
+    min-height: 150px;
+}
+
+/* =Fade In Text */
+ .part h3,
+.part p {
+    transition: all 0.2s ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.part.fade-in h3,
+.part.fade-in p {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+.part h3 {
+    transform: translateX(-20px);
+}
+.part p {
+    transform: translateX(20px);
+} 
+
+
+/* =Footer */
+.footer-container {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #06060d; 
+}
+.footer-container .wrapper {
+    width: 80%;
+    max-width: none;
+    margin: 0 10%; 
+}
+.footer-container h3 {
+    margin: 0;
+    padding: 20px 0;
+    font-weight: normal; 
+}
+.footer-container a {
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+/* ==========================================================================
+    Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .parts p, .parts h3 {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 65px;
+        line-height: 1.2;
+    }
+    #intro {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+}
